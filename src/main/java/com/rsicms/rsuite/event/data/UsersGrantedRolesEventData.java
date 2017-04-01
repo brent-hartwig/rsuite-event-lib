@@ -52,6 +52,15 @@ public class UsersGrantedRolesEventData {
   }
 
   /**
+   * Find out if this event data object has information on at least one user being granted a role.
+   * 
+   * @return True if instance is aware of at least one user being granted a role.
+   */
+  public boolean hasUserWithGrantedRole() {
+    return eventDataList != null && eventDataList.size() > 0;
+  }
+
+  /**
    * Get all the tuples associated with this instance of the event.
    * 
    * @return List of UserGrantedRoleEventData instances which are all of the granting user ID,
