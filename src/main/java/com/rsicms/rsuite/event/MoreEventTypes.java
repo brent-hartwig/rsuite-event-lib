@@ -6,8 +6,8 @@ package com.rsicms.rsuite.event;
 public interface MoreEventTypes {
 
   /**
-   * When a user is granted a role, this event is to be fired. The code granting the role is
-   * responsible for firing the event.
+   * When one or more users are granted roles, this event is to be fired. The code granting the
+   * role(s) is responsible for firing the event.
    */
-  final String USER_GRANTED_ROLE = "custom.user.granted.role";
+  final String USERS_GRANTED_ROLES = "custom.users.granted.roles";
 }
